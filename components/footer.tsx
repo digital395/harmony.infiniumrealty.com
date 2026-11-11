@@ -115,8 +115,10 @@ export default function Footer() {
                 className="
                   relative
                   block
-                  h-20
-                  w-45
+                  h-25
+                  w-55
+                  md:h-25
+                  md:w-65
                   rounded-sm
                   focus:outline-none
                   focus-visible:ring-2
