@@ -202,7 +202,7 @@ const handleNavClick = (
                 }}
               >
                 <Image
-                  src="/images/logo.png"
+                  src="/images/logo-color.png"
                   alt="Harmony Home"
                   width={140}
                   height={40}

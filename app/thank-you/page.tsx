@@ -274,7 +274,7 @@ export default function ThankYou() {
             />
 
             <Image
-              src="/images/logo.png"
+              src="/images/logo-white.png"
               alt="Infinium Harmony"
               width={190}
               height={80}

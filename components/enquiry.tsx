@@ -195,7 +195,7 @@ const canSubmit =
 
     try {
       const leadData = {
-          configuration,
+        configuration,
         budget,
         homePurpose,
         purchaseTimeline,
