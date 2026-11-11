@@ -126,7 +126,7 @@ export default function Footer() {
                 "
               >
                 <Image
-                  src="/images/logo-color.png"
+                  src="/images/logo-white.png"
                   alt="Harmony"
                   fill
                   className="object-contain"
