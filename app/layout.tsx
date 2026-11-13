@@ -11,6 +11,21 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`h-full antialiased`}>
+      <head>
+        <script 
+          async 
+          src="https://www.googletagmanager.com/gtm.js?id=GTM-WHM9CLLP" 
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+            `,
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
