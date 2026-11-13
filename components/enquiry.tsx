@@ -12,10 +12,10 @@ type Configuration =
   | "";
 
 type Budget =
-  | "Up to ₹1.5 Cr"
-  | "₹1.5 – 3 Cr"
-  | "₹3 – 4.5 Cr"
-  | "Above ₹4.5 Cr"
+  | "₹3 Crore – ₹4 Crore"
+  | "₹4 Crore – ₹5 Crore"
+  | "₹5 Crore – ₹6 Crore"
+  | "₹6 Crore – ₹7 Crore"
   | "";
 type PurchaseTimeline =
   | "Within 1 month"
@@ -404,10 +404,10 @@ const canSubmit =
       <div className="mt-4 flex flex-wrap gap-2.5">
         {(
           [
-            "Up to ₹1.5 Cr",
-            "₹1.5 – 3 Cr",
-            "₹3 – 4.5 Cr",
-            "Above ₹4.5 Cr",
+            "₹3 Crore – ₹4 Crore",
+            "₹4 Crore – ₹5 Crore",
+            "₹5 Crore – ₹6 Crore",
+            "₹6 Crore – ₹7 Crore",
           ] as const
         ).map((item) => {
           const selected = budget === item;
