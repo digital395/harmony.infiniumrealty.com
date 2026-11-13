@@ -1,11 +1,11 @@
 {
-  "name": "harmony-villa.infiniumrealty.com",
+  "name": "harmony.infiniumrealty.com",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3009",
+    "start": "next start -p 3071",
     "lint": "eslint"
   },
   "dependencies": {
