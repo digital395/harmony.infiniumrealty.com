@@ -67,7 +67,7 @@ export default function ChooseYourHome() {
   const handlePriceClick = () => {
     if (isLeadValid()) {
       window.open(
-        "/brochure/harmony-price-floor-plan.pdf",
+        "/brochure.pdf",
         "_blank"
       );
       return;
@@ -582,7 +582,7 @@ onClick={() => setIsPopupOpen(true)}
         isOpen={isPopupOpen}
         onClose={() => setIsPopupOpen(false)}
         title="Get Price & Floor Plan"
-        download={false}
+        download={true}
       />
     </section>
   );

@@ -224,7 +224,7 @@ const canSubmit =
 
         const link = document.createElement("a");
         link.href = brochureUrl;
-        link.download = "my-project-brochure.pdf";
+        link.download = "Harmony-Brochure.pdf";
 
         document.body.appendChild(link);
         link.click();

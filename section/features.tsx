@@ -24,7 +24,7 @@ export default function HarmonyVillaFeatures() {
     if (isLeadValid()) {
       // Lead is already verified within the last 24 hours.
       // Download brochure directly.
-      window.open("/brochure/harmony-brochure.pdf", "_blank");
+      window.open("/brochure.pdf", "_blank");
       return;
     }
 
@@ -274,7 +274,7 @@ lg:items-stretch
 
           {/* DOWNLOAD BUTTON */}
 
-          {/* <motion.button
+          <motion.button
             type="button"
             onClick={handleBrochureClick}
             initial={{
@@ -330,7 +330,7 @@ lg:items-stretch
             "
           >
             DOWNLOAD BROCHURE
-          </motion.button> */}
+          </motion.button>
         </motion.div>
 
         {/* =========================================================

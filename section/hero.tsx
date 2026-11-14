@@ -871,7 +871,7 @@ lg:order-2
         isOpen={showPopup}
         onClose={() => setShowPopup(false)}
         title="Book a Site Visit"
-        download={false}
+        download={true}
       />
     </>
   );
