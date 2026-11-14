@@ -21,16 +21,24 @@ export default function HarmonyVillaFeatures() {
   const [isBrochureOpen, setIsBrochureOpen] = useState(false);
 
   const handleBrochureClick = () => {
-    if (isLeadValid()) {
-      // Lead is already verified within the last 24 hours.
-      // Download brochure directly.
-      window.open("/brochure.pdf", "_blank");
-      return;
-    }
+  if (isLeadValid()) {
+    // Lead was successfully submitted within the last 24 hours.
+    // Download brochure directly without opening the popup.
+    const link = document.createElement("a");
 
-    // Lead is not verified, so show the popup.
-    setIsBrochureOpen(true);
-  };
+    link.href = "/brochure.pdf";
+    link.download = "Harmony-Brochure.pdf";
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    return;
+  }
+
+  // No valid lead, or verification expired.
+  setIsBrochureOpen(true);
+};
 
   return (
     <section className="w-full overflow-hidden bg-[#ffffff]">
